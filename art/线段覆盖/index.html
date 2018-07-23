@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="洛谷,贪心,结构体,清北 Day 1," />
+  <meta name="keywords" content="结构体,洛谷,贪心,清北 Day 1," />
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="Luogu P1803    题目大意  ：给定 $ n $ 条线段，现要选取其中 $ k $ 条线段使得这 $ k $ 条线段两两没有重合部分，问最大的 $ k $ 为多少? 主要思路  ：贪心。首先用结构体储存这些边的起点和终点，对这 $ n $ 条线段按照结束时间升序排序，如果 now_time &amp;lt;= edge[i].start ,就更新 now_time  = edge[i].">
-<meta name="keywords" content="洛谷,贪心,结构体,清北 Day 1">
+<meta name="description" content="Luogu P1803    题目大意  ：给定 n n n 条线段，现要选取其中 k k k 条线段使得这 k k k 条线段两两没有重合部分，问最大的 k k k 为多少? 主要思路  ：贪心。首先用结构体储存这些边的起点和终点，对这 n n n 条线段按照结束时间升序排序，如果 now_time &amp;lt;= edge[i].start ,就更新 now_time  = edge[i].">
+<meta name="keywords" content="结构体,洛谷,贪心,清北 Day 1">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Luogu P1803 线段覆盖">
 <meta property="og:url" content="http://yoursite.com/art/线段覆盖/index.html">
 <meta property="og:site_name" content="Huaxlff&#39;s Blog">
-<meta property="og:description" content="Luogu P1803    题目大意  ：给定 $ n $ 条线段，现要选取其中 $ k $ 条线段使得这 $ k $ 条线段两两没有重合部分，问最大的 $ k $ 为多少? 主要思路  ：贪心。首先用结构体储存这些边的起点和终点，对这 $ n $ 条线段按照结束时间升序排序，如果 now_time &amp;lt;= edge[i].start ,就更新 now_time  = edge[i].">
+<meta property="og:description" content="Luogu P1803    题目大意  ：给定 n n n 条线段，现要选取其中 k k k 条线段使得这 k k k 条线段两两没有重合部分，问最大的 k k k 为多少? 主要思路  ：贪心。首先用结构体储存这些边的起点和终点，对这 n n n 条线段按照结束时间升序排序，如果 now_time &amp;lt;= edge[i].start ,就更新 now_time  = edge[i].">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2018-07-21T12:12:59.450Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Luogu P1803 线段覆盖">
-<meta name="twitter:description" content="Luogu P1803    题目大意  ：给定 $ n $ 条线段，现要选取其中 $ k $ 条线段使得这 $ k $ 条线段两两没有重合部分，问最大的 $ k $ 为多少? 主要思路  ：贪心。首先用结构体储存这些边的起点和终点，对这 $ n $ 条线段按照结束时间升序排序，如果 now_time &amp;lt;= edge[i].start ,就更新 now_time  = edge[i].">
+<meta name="twitter:description" content="Luogu P1803    题目大意  ：给定 n n n 条线段，现要选取其中 k k k 条线段使得这 k k k 条线段两两没有重合部分，问最大的 k k k 为多少? 主要思路  ：贪心。首先用结构体储存这些边的起点和终点，对这 n n n 条线段按照结束时间升序排序，如果 now_time &amp;lt;= edge[i].start ,就更新 now_time  = edge[i].">
 
 
 
@@ -355,7 +355,7 @@
 
       
         <p><a href="https://www.luogu.org/problemnew/show/P1803" target="_blank" rel="noopener"> <strong>  Luogu P1803 </strong> </a></p>
-<p><strong> 题目大意 </strong> ：给定 $ n $ 条线段，现要选取其中 $ k $ 条线段使得这 $ k $ 条线段两两没有重合部分，问最大的 $ k $ 为多少?<br><strong> 主要思路 </strong> ：贪心。首先用结构体储存这些边的起点和终点，对这 $ n $ 条线段按照结束时间升序排序，如果 now_time &lt;= edge[i].start ,就更新 now_time  = edge[i].end .  </p>
+<p><strong> 题目大意 </strong> ：给定 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex"> n </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span></span></span></span> 条线段，现要选取其中 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex"> k </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.03148em;">k</span></span></span></span> 条线段使得这 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex"> k </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.03148em;">k</span></span></span></span> 条线段两两没有重合部分，问最大的 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex"> k </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.03148em;">k</span></span></span></span> 为多少?<br><strong> 主要思路 </strong> ：贪心。首先用结构体储存这些边的起点和终点，对这 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex"> n </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span></span></span></span> 条线段按照结束时间升序排序，如果 now_time &lt;= edge[i].start ,就更新 now_time  = edge[i].end .  </p>
 <a id="more"></a>
 <h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Match</span> &#123;</span><span class="keyword">int</span> start, end;&#125; match[<span class="number">1000010</span>];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">cmp</span><span class="params">(Match x,Match y)</span> </span>&#123;<span class="keyword">return</span> x.end &lt; y.end;&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> now_time = <span class="number">0</span>,ans = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> n;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;n);</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>;i &lt;= n;i++) &#123;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">"%d%d"</span>,&amp;match[i].start,&amp;match[i].end);</span><br><span class="line">    &#125;</span><br><span class="line">    sort(match + <span class="number">1</span>,match + n + <span class="number">1</span>,cmp);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>;i &lt;= n;i++) &#123;</span><br><span class="line">    	<span class="keyword">if</span>(now_time &lt;= match[i].start) &#123;</span><br><span class="line">    		ans ++;</span><br><span class="line">    		now_tome = match[i].end;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%d"</span>,ans);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -375,11 +375,11 @@
       
         <div class="post-tags">
           
+            <a href="/tags/结构体/" rel="tag"># 结构体</a>
+          
             <a href="/tags/洛谷/" rel="tag"># 洛谷</a>
           
             <a href="/tags/贪心/" rel="tag"># 贪心</a>
-          
-            <a href="/tags/结构体/" rel="tag"># 结构体</a>
           
             <a href="/tags/清北-Day-1/" rel="tag"># 清北 Day 1</a>
           
@@ -525,7 +525,7 @@
                   <span class="links-of-author-item">
                     <a href="https://www.luogu.org/space/show?uid=61842" target="_blank" title="Luogu">
                       
-                        <i class="fa fa-fw fa-qrcode"></i>Luogu</a>
+                        <i class="fa fa-fw fa-file-code"></i>Luogu</a>
                   </span>
                 
                   <span class="links-of-author-item">
