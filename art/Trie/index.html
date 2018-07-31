@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="数据结构,清北 Day 4,Trie,字符串,洛谷," />
+  <meta name="keywords" content="数据结构,清北学堂,Trie,字符串,洛谷," />
 
 
 
@@ -80,14 +80,14 @@
 
 
 <meta name="description" content="字典树字典树用边表示字母，不区分大小写的情况下，各节点最多有26个节点。   基本操作 ： 1 插入（add）； 2 查找（search）； 3 没了">
-<meta name="keywords" content="数据结构,清北 Day 4,Trie,字符串,洛谷">
+<meta name="keywords" content="数据结构,清北学堂,Trie,字符串,洛谷">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Trie">
 <meta property="og:url" content="http://yoursite.com/art/Trie/index.html">
 <meta property="og:site_name" content="Huaxlff&#39;s Blog">
 <meta property="og:description" content="字典树字典树用边表示字母，不区分大小写的情况下，各节点最多有26个节点。   基本操作 ： 1 插入（add）； 2 查找（search）； 3 没了">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-07-23T12:45:54.990Z">
+<meta property="og:updated_time" content="2018-07-31T02:26:02.897Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Trie">
 <meta name="twitter:description" content="字典树字典树用边表示字母，不区分大小写的情况下，各节点最多有26个节点。   基本操作 ： 1 插入（add）； 2 查找（search）； 3 没了">
@@ -361,7 +361,7 @@
 <li>3 <del>没了</del></li>
 </ul>
 <a id="more"></a>
-<h4 id="插入"><a href="#插入" class="headerlink" title="插入"></a>插入</h4><p>在只需要支持小写字母的情况下，每个节点最多有26个子节点，所以我们可以按他们的字典序从0——25编号，也就是他们的 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi><mi>S</mi><mi>C</mi><mi>L</mi><mi>L</mi></mrow><annotation encoding="application/x-tex"> ASCLL </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">A</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit" style="margin-right:0.07153em;">C</span><span class="mord mathit">L</span><span class="mord mathit">L</span></span></span></span> 码减去 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mrow></mrow><mrow><mi mathvariant="normal">′</mi></mrow></msup><msup><mi>a</mi><mrow><mi mathvariant="normal">′</mi></mrow></msup></mrow><annotation encoding="application/x-tex"> 'a' </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.751892em;"></span><span class="strut bottom" style="height:0.751892em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord"><span></span><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord scriptstyle uncramped"><span class="mord mathrm">′</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mord"><span class="mord mathit">a</span><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord scriptstyle uncramped"><span class="mord mathrm">′</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span> 后的 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi><mi>S</mi><mi>C</mi><mi>L</mi><mi>L</mi></mrow><annotation encoding="application/x-tex"> ASCLL </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">A</span><span class="mord mathit" style="margin-right:0.05764em;">S</span><span class="mord mathit" style="margin-right:0.07153em;">C</span><span class="mord mathit">L</span><span class="mord mathit">L</span></span></span></span> 码。注意这里相同字母的编号相同。  </p>
+<h4 id="插入"><a href="#插入" class="headerlink" title="插入"></a>插入</h4><p>在只需要支持小写字母的情况下，每个节点最多有26个子节点，所以我们可以按他们的字典序从0——25编号，也就是他们的 ASCII 码减去 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mrow></mrow><mrow><mi mathvariant="normal">′</mi></mrow></msup><msup><mi>a</mi><mrow><mi mathvariant="normal">′</mi></mrow></msup></mrow><annotation encoding="application/x-tex"> 'a' </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.751892em;"></span><span class="strut bottom" style="height:0.751892em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord"><span></span><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord scriptstyle uncramped"><span class="mord mathrm">′</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mord"><span class="mord mathit">a</span><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord scriptstyle uncramped"><span class="mord mathrm">′</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span> 后的 ASCLL 码。注意这里相同字母的编号相同。  </p>
 <h5 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h5><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">insert</span><span class="params">()</span><span class="comment">//插入单词</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    root=<span class="number">0</span>;<span class="comment">//根节点编号为0</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;s[i]; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">int</span> id = s[i] - <span class="string">'a'</span>;<span class="comment">//第二种编号</span></span><br><span class="line">        <span class="keyword">if</span>(!trie[root][id])<span class="comment">//如果之前没有从root到id的前缀</span></span><br><span class="line">       	 trie[root][id] = ++tot;<span class="comment">//插入，tot即为第一种编号</span></span><br><span class="line">        root = trie[root][id];<span class="comment">//顺着字典树往下走</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h4 id="查找"><a href="#查找" class="headerlink" title="查找"></a>查找</h4><p>从左往右以此扫描每个字母，顺着字典树往下找，能找到这个字母，往下走，否则结束查找，即没有这个前缀；前缀扫完了，表示有这个前缀。  </p>
 <h5 id="代码-1"><a href="#代码-1" class="headerlink" title="代码"></a>代码</h5><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">search</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> root = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; s[i]; i++) &#123;</span><br><span class="line">		<span class="keyword">int</span> lt = s[i] - <span class="string">'a'</span>;</span><br><span class="line">		<span class="keyword">if</span>(!trie[root][id]) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">		root = trie[root][id];</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -375,7 +375,7 @@
 #include &lt;cmath&gt;
 #define re register
 struct Trie{
-    bool count; int next[26]; bool exist; //exist表示此处是否为一个单词；count表示此单词是否已被查询。
+    bool count;int next[26]; bool exist; //exist表示此处是否为一个单词；count表示此单词是否已被查询。
 }a[500100]; int top(1);
 char str[60]; int n, m;
 char buf[10000], *p = buf, *end = buf; int lent; //不要在意读入优化，使用scanf("%d") 与 scanf("%s") 对应相应读入即可。
@@ -455,7 +455,7 @@ int main() {
 <span class="pl-kt">int</span> <span class="pl-n">trie</span><span class="pl-p">[</span><span class="pl-mi">500010</span><span class="pl-p">][</span><span class="pl-mi">26</span><span class="pl-p">],</span><span class="pl-n">len</span><span class="pl-p">,</span><span class="pl-n">cnt</span><span class="pl-p">;</span>
 <span class="pl-kt">char</span> <span class="pl-n">a</span><span class="pl-p">[</span><span class="pl-mi">50</span><span class="pl-p">];</span>
 
-<span class="pl-c1">// void gs(char s[])</span>
+<span class="pl-c1">// void gs(char s[])      //娌℃湁鐢ㄧ殑浼樺寲</span>
 <span class="pl-c1">// {</span>
 <span class="pl-c1">//     register int i = 0;</span>
 <span class="pl-c1">//     while(!isalpha(s[i] = getchar()));</span>
@@ -525,7 +525,7 @@ int main() {
           
             <a href="/tags/数据结构/" rel="tag"># 数据结构</a>
           
-            <a href="/tags/清北-Day-4/" rel="tag"># 清北 Day 4</a>
+            <a href="/tags/清北学堂/" rel="tag"># 清北学堂</a>
           
             <a href="/tags/Trie/" rel="tag"># Trie</a>
           
@@ -637,7 +637,7 @@ int main() {
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -659,7 +659,7 @@ int main() {
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-count">19</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
