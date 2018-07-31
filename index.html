@@ -265,7 +265,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/art/拓扑排序/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/art/输出二叉树的前中后序遍历/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Huaxlff.">
@@ -284,7 +284,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/art/拓扑排序/" itemprop="url">拓扑排序</a></h1>
+                <a class="post-title-link" href="/art/输出二叉树的前中后序遍历/" itemprop="url">输出二叉树的前中后序遍历</a></h1>
         
 
         <div class="post-meta">
@@ -296,8 +296,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-31T10:00:19+08:00">
-                2018-07-31
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-01T00:15:07+08:00">
+                2018-08-01
               </time>
             
 
@@ -357,11 +357,18 @@
 
       
         
-          <h1 id="拓扑排序"><a href="#拓扑排序" class="headerlink" title="拓扑排序"></a>拓扑排序</h1><p>了解拓扑排序，首先要理解 <strong>入度</strong> 的含义.  </p>
-<h3 id="入度和出度"><a href="#入度和出度" class="headerlink" title="入度和出度"></a>入度和出度</h3><p><strong>入度</strong> 是图论算法中重要的概念之一。它通常指有向图中某点作为图中边的终点的次数之和.<br>与入度相反，<strong>出度</strong> 指的是有向图中某点作为边的起点的次数之和.<br><strong>简单来说</strong>，给定一张有向无环图(DAG),对于其中的一点点 u,若有 m 条边指向 u,那么 u 的入度为 m.<br>
+          <h1 id="输出二叉树的前中后序遍历"><a href="#输出二叉树的前中后序遍历" class="headerlink" title="输出二叉树的前中后序遍历"></a>输出二叉树的前中后序遍历</h1><h2 id="题目大意"><a href="#题目大意" class="headerlink" title="题目大意"></a>题目大意</h2><p>给出一棵二叉树，分别输出先序、中序、后序遍历结果。</p>
+<p><strong> 输入 </strong>  </p>
+<blockquote>
+<p>第1行 : 结点数 n (1 &lt;= n &lt;= 1e6)<br>以下 n 行,每行 3 个整数，分别表示父结点、左孩子、右孩子。若没有孩子，对应的整数为 0 .</p>
+</blockquote>
+<p><strong> 输出 </strong>  </p>
+<blockquote>
+<p>第1行 : 树根<br>第2行 : 先序遍历结果，数字间用 1 个空格分开。<br>第3行 : 中序遍历结果，数字间用 1 个空格分开。<br>第4行 : 后序遍历结果，数字间用 1 个空格分开。</p>
+</blockquote>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/art/拓扑排序/#more" rel="contents">
+            <a class="btn" href="/art/输出二叉树的前中后序遍历/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -798,7 +805,7 @@
       
         
           <p><a href="https://www.luogu.org/problemnew/show/P1803" target="_blank" rel="noopener"> <strong>  Luogu P1803 </strong> </a></p>
-<p><strong> 题目大意 </strong> ：给定 $ n $ 条线段，现要选取其中 $ k $ 条线段使得这 $ k $ 条线段两两没有重合部分，问最大的 $ k $ 为多少?<br><strong> 主要思路 </strong> ：贪心。首先用结构体储存这些边的起点和终点，对这 $ n $ 条线段按照结束时间升序排序，如果 now_time &lt;= edge[i].start ,就更新 now_time  = edge[i].end .  </p>
+<p><strong> 题目大意 </strong> ：给定 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex"> n </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span></span></span></span> 条线段，现要选取其中 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex"> k </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.03148em;">k</span></span></span></span> 条线段使得这 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex"> k </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.03148em;">k</span></span></span></span> 条线段两两没有重合部分，问最大的 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex"> k </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.69444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.03148em;">k</span></span></span></span> 为多少?<br><strong> 主要思路 </strong> ：贪心。首先用结构体储存这些边的起点和终点，对这 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex"> n </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span></span></span></span> 条线段按照结束时间升序排序，如果 now_time &lt;= edge[i].start ,就更新 now_time  = edge[i].end .  </p>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/art/线段覆盖/#more" rel="contents">
@@ -1097,7 +1104,9 @@
         
           <p>begin:</p>
 <p>ghw &amp;&amp; shq &amp;&amp; pwf 创建了本页面</p>
-<p><a href="https://blog.ishq.site" target="_blank" rel="noopener">ishq’s Blog</a><br><a href="https://masellum.github.io" target="_blank" rel="noopener">masellum’s Blog</a><br><a href="https://mzwuzad.github.io" target="_blank" rel="noopener">yyl’s Blog</a><br>
+<p><a href="https://blog.ishq.site" target="_blank" rel="noopener">ishq&#39;s Blog</a>
+<a href="https://masellum.github.io" target="_blank" rel="noopener">masellum&#39;s Blog</a>
+<a href="https://mzwuzad.github.io" target="_blank" rel="noopener">yyl&#39;s Blog</a>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/art/shqshqshq/#more" rel="contents">
@@ -1210,7 +1219,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">19</span>
+                  <span class="site-state-item-count">18</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
