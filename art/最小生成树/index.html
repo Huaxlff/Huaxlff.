@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="最小生成树首先应该明确几点概念：  树  ：如果一个无向连通图中不存在环，那么这个无向连通图就可以叫做树。生成树 : 如果无向连通图 $G$ 的一个子图是一颗包含 $G$ 的所有顶点的树，那么这个子图就是 $G$ 的生成树。 生成树是连通图的极小连通子图。这里的极小是指：若在树中任意增加一条边，则将出现一条回路；若去掉一条边，将会使之变成非连通图。">
+<meta name="description" content="最小生成树首先应该明确几点概念：  树  ：如果一个无向连通图中不存在环，那么这个无向连通图就可以叫做树。生成树 : 如果无向连通图 GGG 的一个子图是一颗包含 GGG 的所有顶点的树，那么这个子图就是 GGG 的生成树。 生成树是连通图的极小连通子图。这里的极小是指：若在树中任意增加一条边，则将出现一条回路；若去掉一条边，将会使之变成非连通图。">
 <meta name="keywords" content="Kruskal,并查集,结构体,树,Model">
 <meta property="og:type" content="article">
 <meta property="og:title" content="最小生成树">
 <meta property="og:url" content="http://yoursite.com/art/最小生成树/index.html">
 <meta property="og:site_name" content="Huaxlff&#39;s Blog">
-<meta property="og:description" content="最小生成树首先应该明确几点概念：  树  ：如果一个无向连通图中不存在环，那么这个无向连通图就可以叫做树。生成树 : 如果无向连通图 $G$ 的一个子图是一颗包含 $G$ 的所有顶点的树，那么这个子图就是 $G$ 的生成树。 生成树是连通图的极小连通子图。这里的极小是指：若在树中任意增加一条边，则将出现一条回路；若去掉一条边，将会使之变成非连通图。">
+<meta property="og:description" content="最小生成树首先应该明确几点概念：  树  ：如果一个无向连通图中不存在环，那么这个无向连通图就可以叫做树。生成树 : 如果无向连通图 GGG 的一个子图是一颗包含 GGG 的所有顶点的树，那么这个子图就是 GGG 的生成树。 生成树是连通图的极小连通子图。这里的极小是指：若在树中任意增加一条边，则将出现一条回路；若去掉一条边，将会使之变成非连通图。">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2018-08-01T07:05:00.696Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="最小生成树">
-<meta name="twitter:description" content="最小生成树首先应该明确几点概念：  树  ：如果一个无向连通图中不存在环，那么这个无向连通图就可以叫做树。生成树 : 如果无向连通图 $G$ 的一个子图是一颗包含 $G$ 的所有顶点的树，那么这个子图就是 $G$ 的生成树。 生成树是连通图的极小连通子图。这里的极小是指：若在树中任意增加一条边，则将出现一条回路；若去掉一条边，将会使之变成非连通图。">
+<meta name="twitter:description" content="最小生成树首先应该明确几点概念：  树  ：如果一个无向连通图中不存在环，那么这个无向连通图就可以叫做树。生成树 : 如果无向连通图 GGG 的一个子图是一颗包含 GGG 的所有顶点的树，那么这个子图就是 GGG 的生成树。 生成树是连通图的极小连通子图。这里的极小是指：若在树中任意增加一条边，则将出现一条回路；若去掉一条边，将会使之变成非连通图。">
 
 
 
@@ -354,14 +354,15 @@
       
 
       
-        <h1 id="最小生成树"><a href="#最小生成树" class="headerlink" title="最小生成树"></a>最小生成树</h1><p>首先应该明确几点概念：<br> <strong> 树 </strong> ：如果一个无向连通图中不存在环，那么这个无向连通图就可以叫做树。<br><a href="https://blog.csdn.net/qq_33060405/article/details/78536847" target="_blank" rel="noopener"><strong>生成树</strong></a> : 如果无向连通图 $G$ 的一个子图是一颗包含 $G$ 的所有顶点的树，那么这个子图就是 $G$ 的生成树。</p>
+        <h1 id="最小生成树"><a href="#最小生成树" class="headerlink" title="最小生成树"></a>最小生成树</h1><p>首先应该明确几点概念：<br> <strong> 树 </strong> ：如果一个无向连通图中不存在环，那么这个无向连通图就可以叫做树。<br><a href="https://blog.csdn.net/qq_33060405/article/details/78536847" target="_blank" rel="noopener"><strong>生成树</strong></a> : 如果无向连通图 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>G</mi></mrow><annotation encoding="application/x-tex">G</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">G</span></span></span></span> 的一个子图是一颗包含 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>G</mi></mrow><annotation encoding="application/x-tex">G</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">G</span></span></span></span> 的所有顶点的树，那么这个子图就是 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>G</mi></mrow><annotation encoding="application/x-tex">G</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">G</span></span></span></span> 的生成树。</p>
 <p>生成树是连通图的极小连通子图。这里的极小是指：若在树中任意增加一条边，则将出现一条回路；若去掉一条边，将会使之变成非连通图。  </p>
 <a id="more"></a>
 <h4 id="构成生成树的两个基本条件："><a href="#构成生成树的两个基本条件：" class="headerlink" title=" 构成生成树的两个基本条件："></a><font color="#FB7299"> 构成生成树的两个基本条件：</font></h4><blockquote>
-<p>只能使用该网络中的边构建最小生成树。<br>最小生成树里只能由 $n$ 个顶点和 $n - 1$ 条边构成。（写 kruskal 还会用到）</p>
+<p>只能使用该网络中的边构建最小生成树。<br>最小生成树里只能由 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span></span></span></span> 个顶点和 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n - 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span><span class="mbin">−</span><span class="mord mathrm">1</span></span></span></span> 条边构成。（写 kruskal 还会用到）</p>
 </blockquote>
 <p>最小生成树 ：边权和最小的生成树就叫最小生成树。</p>
-<h2 id="Kruskal-算法"><a href="#Kruskal-算法" class="headerlink" title="Kruskal 算法"></a>Kruskal 算法</h2><p>Kruskal 算法的基本思想是以边为主导地位，始终选择当前不能构成回路的最小权植边。所以 Kruskal<br>算法的第一步是给所有边按照从小到大的顺序排序，之后由小到大依次遍历每一条边($u$, $v$)。</p>
+<h2 id="Kruskal-算法"><a href="#Kruskal-算法" class="headerlink" title="Kruskal 算法"></a>Kruskal 算法</h2><p>Kruskal 算法的基本思想是以边为主导地位，始终选择当前不能构成回路的最小权植边。所以 Kruskal
+算法的第一步是给所有边按照从小到大的顺序排序，之后由小到大依次遍历每一条边(<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>u</mi></mrow><annotation encoding="application/x-tex">u</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">u</span></span></span></span>, <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.03588em;">v</span></span></span></span>)。</p>
 <p> 排序：</p>
  <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">cmp</span><span class="params">(Edge a,Edge b)</span> </span>&#123;<span class="keyword">return</span> a.w &lt; b.w;&#125; <span class="comment">//Edge 是我们建的图，w 是权值。</span></span><br></pre></td></tr></table></figure>
  <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sort(edge, edge + m, cmp); <span class="comment">// m 是这个图的无向边数</span></span><br></pre></td></tr></table></figure>
@@ -409,8 +410,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/art/线段覆盖/" rel="next" title="Luogu P1803 线段覆盖">
-                <i class="fa fa-chevron-left"></i> Luogu P1803 线段覆盖
+              <a href="/art/Trie/" rel="next" title="Trie">
+                <i class="fa fa-chevron-left"></i> Trie
               </a>
             
           </div>
@@ -502,7 +503,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -524,7 +525,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">18</span>
+                  <span class="site-state-item-count">16</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>

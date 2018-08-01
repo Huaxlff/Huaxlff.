@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="字典树字典树用边表示字母，不区分大小写的情况下，各节点最多有 $26$ 个节点。   基本操作 ： 1 插入(add); 2 查找(search); 3 没了">
+<meta name="description" content="字典树字典树用边表示字母，不区分大小写的情况下，各节点最多有 262626 个节点。   基本操作 ： 1 插入(add); 2 查找(search); 3 没了">
 <meta name="keywords" content="数据结构,清北学堂,Trie,字符串,洛谷">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Trie">
 <meta property="og:url" content="http://yoursite.com/art/Trie/index.html">
 <meta property="og:site_name" content="Huaxlff&#39;s Blog">
-<meta property="og:description" content="字典树字典树用边表示字母，不区分大小写的情况下，各节点最多有 $26$ 个节点。   基本操作 ： 1 插入(add); 2 查找(search); 3 没了">
+<meta property="og:description" content="字典树字典树用边表示字母，不区分大小写的情况下，各节点最多有 262626 个节点。   基本操作 ： 1 插入(add); 2 查找(search); 3 没了">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2018-08-01T06:59:21.114Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Trie">
-<meta name="twitter:description" content="字典树字典树用边表示字母，不区分大小写的情况下，各节点最多有 $26$ 个节点。   基本操作 ： 1 插入(add); 2 查找(search); 3 没了">
+<meta name="twitter:description" content="字典树字典树用边表示字母，不区分大小写的情况下，各节点最多有 262626 个节点。   基本操作 ： 1 插入(add); 2 查找(search); 3 没了">
 
 
 
@@ -354,157 +354,99 @@
       
 
       
-        <h1 id="字典树"><a href="#字典树" class="headerlink" title="字典树"></a>字典树</h1><p>字典树用边表示字母，不区分大小写的情况下，各节点最多有 $26$ 个节点。  </p>
+        <h1 id="字典树"><a href="#字典树" class="headerlink" title="字典树"></a>字典树</h1><p>字典树用边表示字母，不区分大小写的情况下，各节点最多有 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>2</mn><mn>6</mn></mrow><annotation encoding="application/x-tex">26</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.64444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">2</span><span class="mord mathrm">6</span></span></span></span> 个节点。  </p>
 <h3 id="基本操作-："><a href="#基本操作-：" class="headerlink" title="基本操作 ："></a>基本操作 ：</h3><ul>
 <li>1 插入(add);</li>
 <li>2 查找(search);</li>
 <li>3 <del>没了</del></li>
 </ul>
 <a id="more"></a>
-<h4 id="插入"><a href="#插入" class="headerlink" title="插入"></a>插入</h4><p>在只需要支持小写字母的情况下，每个节点最多有 $26$ 个子节点，所以我们可以按他们的字典序从 $0——25$ 编号，也就是他们的 ASCII 码<strong>减</strong>去 $ ‘a’ $ 后的 ASCLL 码。注意这里相同字母的编号相同。  </p>
+<h4 id="插入"><a href="#插入" class="headerlink" title="插入"></a>插入</h4><p>在只需要支持小写字母的情况下，每个节点最多有 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>2</mn><mn>6</mn></mrow><annotation encoding="application/x-tex">26</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.64444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">2</span><span class="mord mathrm">6</span></span></span></span> 个子节点，所以我们可以按他们的字典序从 <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="8.909ex" height="2.176ex" style="vertical-align: -0.338ex;" viewbox="0 -791.3 3835.8 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<path stroke-width="1" id="E1-MJMAIN-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"/>
+<path stroke-width="1" id="E1-MJMAIN-2014" d="M0 248V285H999V248H0Z"/>
+<path stroke-width="1" id="E1-MJMAIN-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"/>
+<path stroke-width="1" id="E1-MJMAIN-35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z"/>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
+ <use xlink:href="#E1-MJMAIN-30" x="0" y="0"/>
+ <use xlink:href="#E1-MJMAIN-2014" x="500" y="0"/>
+ <use xlink:href="#E1-MJMAIN-2014" x="1667" y="0"/>
+<g transform="translate(2834,0)">
+ <use xlink:href="#E1-MJMAIN-32"/>
+ <use xlink:href="#E1-MJMAIN-35" x="500" y="0"/>
+</g>
+</g>
+</svg> 编号，也就是他们的 ASCII 码<strong>减</strong>去 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mrow></mrow><mrow><mi mathvariant="normal">′</mi></mrow></msup><msup><mi>a</mi><mrow><mi mathvariant="normal">′</mi></mrow></msup></mrow><annotation encoding="application/x-tex"> &#x27;a&#x27; </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.751892em;"></span><span class="strut bottom" style="height:0.751892em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord"><span></span><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord scriptstyle uncramped"><span class="mord mathrm">′</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mord"><span class="mord mathit">a</span><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord scriptstyle uncramped"><span class="mord mathrm">′</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span> 后的 ASCLL 码。注意这里相同字母的编号相同。  </p>
 <h5 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h5><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">insert</span><span class="params">()</span><span class="comment">//插入单词</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    root=<span class="number">0</span>;<span class="comment">//根节点编号为0</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;s[i]; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">int</span> id = s[i] - <span class="string">'a'</span>;<span class="comment">//第二种编号</span></span><br><span class="line">        <span class="keyword">if</span>(!trie[root][id])<span class="comment">//如果之前没有从root到id的前缀</span></span><br><span class="line">       	 trie[root][id] = ++tot;<span class="comment">//插入，tot即为第一种编号</span></span><br><span class="line">        root = trie[root][id];<span class="comment">//顺着字典树往下走</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h4 id="查找"><a href="#查找" class="headerlink" title="查找"></a>查找</h4><p>从左往右以此扫描每个字母，顺着字典树往下找，能找到这个字母，往下走，否则结束查找，即没有这个前缀；前缀扫完了，表示有这个前缀。  </p>
 <h5 id="代码-1"><a href="#代码-1" class="headerlink" title="代码"></a>代码</h5><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">search</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> root = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; s[i]; i++) &#123;</span><br><span class="line">		<span class="keyword">int</span> lt = s[i] - <span class="string">'a'</span>;</span><br><span class="line">		<span class="keyword">if</span>(!trie[root][id]) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">		root = trie[root][id];</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>让我们来看一道看一道裸题 ：</p>
-<h3 id="Luogu-P2580-于是他错误的点名开始了"><a href="#Luogu-P2580-于是他错误的点名开始了" class="headerlink" title="Luogu P2580 于是他错误的点名开始了"></a><a href="https://www.luogu.org/problemnew/show/P2580" target="_blank" rel="noopener">Luogu P2580 于是他错误的点名开始了</a></h3><h4 id="题目大意"><a href="#题目大意" class="headerlink" title="题目大意"></a>题目大意</h4><p>给你 $n$ 个字符串以及 $m$ 个询问，每次询问需要回答：如果该询问的字符串没有在 $n$ 个字符串里面出现过，输出“WRONG”，如果该询问的字符串出现过而且是第一次询问，输出“OK”，如果该询问的字符串出现过但不是第一次询问，输出“REPEAT”。</p>
+<h3 id="Luogu-P2580-于是他错误的点名开始了"><a href="#Luogu-P2580-于是他错误的点名开始了" class="headerlink" title="Luogu P2580 于是他错误的点名开始了"></a><a href="https://www.luogu.org/problemnew/show/P2580" target="_blank" rel="noopener">Luogu P2580 于是他错误的点名开始了</a></h3><h4 id="题目大意"><a href="#题目大意" class="headerlink" title="题目大意"></a>题目大意</h4><p>给你 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span></span></span></span> 个字符串以及 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">m</span></span></span></span> 个询问，每次询问需要回答：如果该询问的字符串没有在 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span></span></span></span> 个字符串里面出现过，输出“WRONG”，如果该询问的字符串出现过而且是第一次询问，输出“OK”，如果该询问的字符串出现过但不是第一次询问，输出“REPEAT”。</p>
 <h4 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h4><p> 本题是一个Trie树模板题，插入操作不必说，只在字符串结尾加上存在标记即可；查询操作返回的三种状态则可以加入一个布尔变量，判断是否已被查询过。  </p>
-<h5 id="解法一-指针写法"><a href="#解法一-指针写法" class="headerlink" title="解法一 (指针写法)"></a>解法一 (指针写法)</h5><pre><code class="lang-c++">#include &lt;algorithm&gt;
-#include &lt;cctype&gt;
-#include &lt;cstdio&gt;
-#include &lt;cstring&gt;
-#include &lt;cmath&gt;
-#define re register
-struct Trie{
-    bool count;int next[26]; bool exist; //exist表示此处是否为一个单词；count表示此单词是否已被查询。
-}a[500100]; int top(1);
-char str[60]; int n, m;
-char buf[10000], *p = buf, *end = buf; int lent; //不要在意读入优化，使用scanf(&quot;%d&quot;) 与 scanf(&quot;%s&quot;) 对应相应读入即可。
-inline char getChar() {
-    if(p == end) {
-        if(feof(stdin)) return &#39;\0&#39;;
-        p = buf, end = buf + fread(buf, 1, 10000, stdin);
-    }
-    return * (p++);
-}
-inline void getString(char* str) {
-    lent = 0; char _c;
-    while (!isalpha(_c = getChar()));
-    do str[lent++] = _c;
-    while (isalpha(_c = getChar()));
-    str[lent] = &#39;\0&#39;;
-    return ;
-}
-inline void getNum(int&amp; x) {
-    x = 0; char c;
-    while(!isdigit(c = getChar()));
-    do x = x * 10 + (c - &#39;0&#39;);
-    while(isdigit(c = getChar()));
-    return ;
-}
-inline void Trie_insert() {//普通insert操作，将字符串一一加入字典中
-    int num(0), root = 1;
-    for (re int i = 0; str[i]; ++i) {
-        num = str[i] - &#39;a&#39;;
-        if(!a[root].next[num]) a[root].next[num] = ++top;
-        root = a[root].next[num];
-    }
-    a[root].exist = true;
-    return ;
-}
-inline int Trie_search() {//普通search操作，查询是否存在该字符串
-    int num(0), root = 1;
-    for (re int i = 0; str[i]; ++i) {
-        num = str[i] - &#39;a&#39;;
-        if(!a[root].next[num]) return 0;  //若无法查询到后继的字母，直接退出
-        root = a[root].next[num];
-    }
-    if(!a[root].exist) return 0;  //若此处不存在字符串，返回“WRONG”
-    else if(a[root].count) return 2;  //若此处字符串已被查询，返回“REPEAT”
-    a[root].count = true;  //若以上均不满足，说明合法
-    return 1;  //此字符串标记为已查询，返回“OK”
-}
-int main() {
-    //freopen(&quot;Trie_Tree.in&quot;, &quot;r&quot;, stdin);本地测试用
-    getNum(n);
-    for (re int i = 1; i &lt;= n; ++i) {  //插入
-        memset(str, 0, sizeof str);
-        getString(str);
-        Trie_insert();
-    }
-    getNum(m);
-    scanf(&quot;%d&quot;, &amp;m);
-    for (re int i = 1; i &lt;= m; ++i) {  //查询
-        memset(str, 0, sizeof str);
-        getString(str);
-        int tmp = Trie_search();
-        if(tmp == 0) printf(&quot;WRONG\n&quot;);  //分类讨论
-        else if(tmp == 1) printf(&quot;OK\n&quot;);
-        else if(tmp == 2) printf(&quot;REPEAT\n&quot;);
-    }
-    return 0;
-}
-</code></pre>
-<h5 id="解法二-数组模拟"><a href="#解法二-数组模拟" class="headerlink" title="解法二(数组模拟)"></a>解法二(数组模拟)</h5><pre><code class="lang-c++">#include&lt;iostream&gt;
-#include&lt;cstring&gt;
-#include&lt;cstdio&gt;
-#include&lt;algorithm&gt;
+<h5 id="解法一-指针写法"><a href="#解法一-指针写法" class="headerlink" title="解法一 (指针写法)"></a>解法一 (指针写法)</h5><pre><code class="lang-c++"><div class="highlight"><pre>&#35;include &#60;algorithm&#62;&#10;&#35;include &#60;cctype&#62;&#10;&#35;include &#60;cstdio&#62;&#10;&#35;include &#60;cstring&#62;&#10;&#35;include &#60;cmath&#62;&#10;&#35;define re register&#10;struct Trie&#123;&#10;    bool count&#59;int next&#91;26&#93;&#59; bool exist&#59; &#47;&#47;exist&#34920;&#31034;&#27492;&#22788;&#26159;&#21542;&#20026;&#19968;&#20010;&#21333;&#35789;&#65307;count&#34920;&#31034;&#27492;&#21333;&#35789;&#26159;&#21542;&#24050;&#34987;&#26597;&#35810;&#12290;&#10;&#125;a&#91;500100&#93;&#59; int top&#40;1&#41;&#59;&#10;char str&#91;60&#93;&#59; int n&#44; m&#59;&#10;char buf&#91;10000&#93;&#44; &#42;p &#61; buf&#44; &#42;end &#61; buf&#59; int lent&#59; &#47;&#47;&#19981;&#35201;&#22312;&#24847;&#35835;&#20837;&#20248;&#21270;&#65292;&#20351;&#29992;scanf&#40;&#34;&#37;d&#34;&#41; &#19982; scanf&#40;&#34;&#37;s&#34;&#41; &#23545;&#24212;&#30456;&#24212;&#35835;&#20837;&#21363;&#21487;&#12290;&#10;inline char getChar&#40;&#41; &#123;&#10;    if&#40;p &#61;&#61; end&#41; &#123;&#10;        if&#40;feof&#40;stdin&#41;&#41; return &#39;&#92;0&#39;&#59;&#10;        p &#61; buf&#44; end &#61; buf &#43; fread&#40;buf&#44; 1&#44; 10000&#44; stdin&#41;&#59;&#10;    &#125;&#10;    return &#42; &#40;p&#43;&#43;&#41;&#59;&#10;&#125;&#10;inline void getString&#40;char&#42; str&#41; &#123;&#10;    lent &#61; 0&#59; char &#95;c&#59;&#10;    while &#40;&#33;isalpha&#40;&#95;c &#61; getChar&#40;&#41;&#41;&#41;&#59;&#10;    do str&#91;lent&#43;&#43;&#93; &#61; &#95;c&#59;&#10;    while &#40;isalpha&#40;&#95;c &#61; getChar&#40;&#41;&#41;&#41;&#59;&#10;    str&#91;lent&#93; &#61; &#39;&#92;0&#39;&#59;&#10;    return &#59;&#10;&#125;&#10;inline void getNum&#40;int&#38; x&#41; &#123;&#10;    x &#61; 0&#59; char c&#59;&#10;    while&#40;&#33;isdigit&#40;c &#61; getChar&#40;&#41;&#41;&#41;&#59;&#10;    do x &#61; x &#42; 10 &#43; &#40;c &#45; &#39;0&#39;&#41;&#59;&#10;    while&#40;isdigit&#40;c &#61; getChar&#40;&#41;&#41;&#41;&#59;&#10;    return &#59;&#10;&#125;&#10;inline void Trie&#95;insert&#40;&#41; &#123;&#47;&#47;&#26222;&#36890;insert&#25805;&#20316;&#65292;&#23558;&#23383;&#31526;&#20018;&#19968;&#19968;&#21152;&#20837;&#23383;&#20856;&#20013;&#10;    int num&#40;0&#41;&#44; root &#61; 1&#59;&#10;    for &#40;re int i &#61; 0&#59; str&#91;i&#93;&#59; &#43;&#43;i&#41; &#123;&#10;        num &#61; str&#91;i&#93; &#45; &#39;a&#39;&#59;&#10;        if&#40;&#33;a&#91;root&#93;&#46;next&#91;num&#93;&#41; a&#91;root&#93;&#46;next&#91;num&#93; &#61; &#43;&#43;top&#59;&#10;        root &#61; a&#91;root&#93;&#46;next&#91;num&#93;&#59;&#10;    &#125;&#10;    a&#91;root&#93;&#46;exist &#61; true&#59;&#10;    return &#59;&#10;&#125;&#10;inline int Trie&#95;search&#40;&#41; &#123;&#47;&#47;&#26222;&#36890;search&#25805;&#20316;&#65292;&#26597;&#35810;&#26159;&#21542;&#23384;&#22312;&#35813;&#23383;&#31526;&#20018;&#10;    int num&#40;0&#41;&#44; root &#61; 1&#59;&#10;    for &#40;re int i &#61; 0&#59; str&#91;i&#93;&#59; &#43;&#43;i&#41; &#123;&#10;        num &#61; str&#91;i&#93; &#45; &#39;a&#39;&#59;&#10;        if&#40;&#33;a&#91;root&#93;&#46;next&#91;num&#93;&#41; return 0&#59;  &#47;&#47;&#33509;&#26080;&#27861;&#26597;&#35810;&#21040;&#21518;&#32487;&#30340;&#23383;&#27597;&#65292;&#30452;&#25509;&#36864;&#20986;&#10;        root &#61; a&#91;root&#93;&#46;next&#91;num&#93;&#59;&#10;    &#125;&#10;    if&#40;&#33;a&#91;root&#93;&#46;exist&#41; return 0&#59;  &#47;&#47;&#33509;&#27492;&#22788;&#19981;&#23384;&#22312;&#23383;&#31526;&#20018;&#65292;&#36820;&#22238;&#8220;WRONG&#8221;&#10;    else if&#40;a&#91;root&#93;&#46;count&#41; return 2&#59;  &#47;&#47;&#33509;&#27492;&#22788;&#23383;&#31526;&#20018;&#24050;&#34987;&#26597;&#35810;&#65292;&#36820;&#22238;&#8220;REPEAT&#8221;&#10;    a&#91;root&#93;&#46;count &#61; true&#59;  &#47;&#47;&#33509;&#20197;&#19978;&#22343;&#19981;&#28385;&#36275;&#65292;&#35828;&#26126;&#21512;&#27861;&#10;    return 1&#59;  &#47;&#47;&#27492;&#23383;&#31526;&#20018;&#26631;&#35760;&#20026;&#24050;&#26597;&#35810;&#65292;&#36820;&#22238;&#8220;OK&#8221;&#10;&#125;&#10;int main&#40;&#41; &#123;&#10;    &#47;&#47;freopen&#40;&#34;Trie&#95;Tree&#46;in&#34;&#44; &#34;r&#34;&#44; stdin&#41;&#59;&#26412;&#22320;&#27979;&#35797;&#29992;&#10;    getNum&#40;n&#41;&#59;&#10;    for &#40;re int i &#61; 1&#59; i &#60;&#61; n&#59; &#43;&#43;i&#41; &#123;  &#47;&#47;&#25554;&#20837;&#10;        memset&#40;str&#44; 0&#44; sizeof str&#41;&#59;&#10;        getString&#40;str&#41;&#59;&#10;        Trie&#95;insert&#40;&#41;&#59;&#10;    &#125;&#10;    getNum&#40;m&#41;&#59;&#10;    scanf&#40;&#34;&#37;d&#34;&#44; &#38;m&#41;&#59;&#10;    for &#40;re int i &#61; 1&#59; i &#60;&#61; m&#59; &#43;&#43;i&#41; &#123;  &#47;&#47;&#26597;&#35810;&#10;        memset&#40;str&#44; 0&#44; sizeof str&#41;&#59;&#10;        getString&#40;str&#41;&#59;&#10;        int tmp &#61; Trie&#95;search&#40;&#41;&#59;&#10;        if&#40;tmp &#61;&#61; 0&#41; printf&#40;&#34;WRONG&#92;n&#34;&#41;&#59;  &#47;&#47;&#20998;&#31867;&#35752;&#35770;&#10;        else if&#40;tmp &#61;&#61; 1&#41; printf&#40;&#34;OK&#92;n&#34;&#41;&#59;&#10;        else if&#40;tmp &#61;&#61; 2&#41; printf&#40;&#34;REPEAT&#92;n&#34;&#41;&#59;&#10;    &#125;&#10;    return 0&#59;&#10;&#125;</pre></div></code></pre>
+<h5 id="解法二-数组模拟"><a href="#解法二-数组模拟" class="headerlink" title="解法二(数组模拟)"></a>解法二(数组模拟)</h5><pre><code class="lang-c++"><div class="highlight"><pre><span class="pl-cp">#include&lt;iostream&gt;</span>
+<span class="pl-cp">#include&lt;cstring&gt;</span>
+<span class="pl-cp">#include&lt;cstdio&gt;</span>
+<span class="pl-cp">#include&lt;algorithm&gt;</span>
 
-using namespace std;
+<span class="pl-k">using</span> <span class="pl-k">namespace</span> <span class="pl-n">std</span><span class="pl-p">;</span>
 
-int s[500010];
-int n,m,p;
-int trie[500010][26],len,cnt;
-char a[50];
+<span class="pl-kt">int</span> <span class="pl-n">s</span><span class="pl-p">[</span><span class="pl-mi">500010</span><span class="pl-p">];</span>
+<span class="pl-kt">int</span> <span class="pl-n">n</span><span class="pl-p">,</span><span class="pl-n">m</span><span class="pl-p">,</span><span class="pl-n">p</span><span class="pl-p">;</span>
+<span class="pl-kt">int</span> <span class="pl-n">trie</span><span class="pl-p">[</span><span class="pl-mi">500010</span><span class="pl-p">][</span><span class="pl-mi">26</span><span class="pl-p">],</span><span class="pl-n">len</span><span class="pl-p">,</span><span class="pl-n">cnt</span><span class="pl-p">;</span>
+<span class="pl-kt">char</span> <span class="pl-n">a</span><span class="pl-p">[</span><span class="pl-mi">50</span><span class="pl-p">];</span>
 
-// void gs(char s[])      //没有用的优化
-// {
-//     register int i = 0;
-//     while(!isalpha(s[i] = getchar()));
-//     if(isalpha(s[i]))i ++;
-//     while(isalpha(s[i] = getchar()))i ++;
-//     s[i] = &#39;\0&#39;;
-// }
+<span class="pl-c1">// void gs(char s[])      //娌℃湁鐢ㄧ殑浼樺寲</span>
+<span class="pl-c1">// {</span>
+<span class="pl-c1">//     register int i = 0;</span>
+<span class="pl-c1">//     while(!isalpha(s[i] = getchar()));</span>
+<span class="pl-c1">//     if(isalpha(s[i]))i ++;</span>
+<span class="pl-c1">//     while(isalpha(s[i] = getchar()))i ++;</span>
+<span class="pl-c1">//     s[i] = &#39;\0&#39;;</span>
+<span class="pl-c1">// }</span>
 
-void insert() {
-    int root = 0;
-    for(int i = 0; a[i]; i++) {
-        int lt = a[i] - &#39;a&#39;;
-        if(!trie[root][lt]) trie[root][lt] = ++ cnt;
-        root = trie[root][lt];
-    }
-    s[root] = 1;
-}
+<span class="pl-kt">void</span> <span class="pl-nf">insert</span><span class="pl-p">()</span> <span class="pl-p">{</span>
+    <span class="pl-kt">int</span> <span class="pl-n">root</span> <span class="pl-o">=</span> <span class="pl-mi">0</span><span class="pl-p">;</span>
+    <span class="pl-k">for</span><span class="pl-p">(</span><span class="pl-kt">int</span> <span class="pl-n">i</span> <span class="pl-o">=</span> <span class="pl-mi">0</span><span class="pl-p">;</span> <span class="pl-n">a</span><span class="pl-p">[</span><span class="pl-n">i</span><span class="pl-p">];</span> <span class="pl-n">i</span><span class="pl-o">++</span><span class="pl-p">)</span> <span class="pl-p">{</span>
+        <span class="pl-kt">int</span> <span class="pl-n">lt</span> <span class="pl-o">=</span> <span class="pl-n">a</span><span class="pl-p">[</span><span class="pl-n">i</span><span class="pl-p">]</span> <span class="pl-o">-</span> <span class="pl-sc">&#39;a&#39;</span><span class="pl-p">;</span>
+        <span class="pl-k">if</span><span class="pl-p">(</span><span class="pl-o">!</span><span class="pl-n">trie</span><span class="pl-p">[</span><span class="pl-n">root</span><span class="pl-p">][</span><span class="pl-n">lt</span><span class="pl-p">])</span> <span class="pl-n">trie</span><span class="pl-p">[</span><span class="pl-n">root</span><span class="pl-p">][</span><span class="pl-n">lt</span><span class="pl-p">]</span> <span class="pl-o">=</span> <span class="pl-o">++</span> <span class="pl-n">cnt</span><span class="pl-p">;</span>
+        <span class="pl-n">root</span> <span class="pl-o">=</span> <span class="pl-n">trie</span><span class="pl-p">[</span><span class="pl-n">root</span><span class="pl-p">][</span><span class="pl-n">lt</span><span class="pl-p">];</span>
+    <span class="pl-p">}</span>
+    <span class="pl-n">s</span><span class="pl-p">[</span><span class="pl-n">root</span><span class="pl-p">]</span> <span class="pl-o">=</span> <span class="pl-mi">1</span><span class="pl-p">;</span>
+<span class="pl-p">}</span>
 
-int search() {
-    int root = 0;
-    for(int i = 0; a[i]; i++) {
-        int lt = a[i] - &#39;a&#39;;
-        if(!trie[root][lt]) return 0;
-        root = trie[root][lt];
-    }
-    if(s[root] == 1) {
-        s[root] = 2;
-        return 1;
-    }
-    else return 2;
-}
+<span class="pl-kt">int</span> <span class="pl-nf">search</span><span class="pl-p">()</span> <span class="pl-p">{</span>
+    <span class="pl-kt">int</span> <span class="pl-n">root</span> <span class="pl-o">=</span> <span class="pl-mi">0</span><span class="pl-p">;</span>
+    <span class="pl-k">for</span><span class="pl-p">(</span><span class="pl-kt">int</span> <span class="pl-n">i</span> <span class="pl-o">=</span> <span class="pl-mi">0</span><span class="pl-p">;</span> <span class="pl-n">a</span><span class="pl-p">[</span><span class="pl-n">i</span><span class="pl-p">];</span> <span class="pl-n">i</span><span class="pl-o">++</span><span class="pl-p">)</span> <span class="pl-p">{</span>
+        <span class="pl-kt">int</span> <span class="pl-n">lt</span> <span class="pl-o">=</span> <span class="pl-n">a</span><span class="pl-p">[</span><span class="pl-n">i</span><span class="pl-p">]</span> <span class="pl-o">-</span> <span class="pl-sc">&#39;a&#39;</span><span class="pl-p">;</span>
+        <span class="pl-k">if</span><span class="pl-p">(</span><span class="pl-o">!</span><span class="pl-n">trie</span><span class="pl-p">[</span><span class="pl-n">root</span><span class="pl-p">][</span><span class="pl-n">lt</span><span class="pl-p">])</span> <span class="pl-k">return</span> <span class="pl-mi">0</span><span class="pl-p">;</span>
+        <span class="pl-n">root</span> <span class="pl-o">=</span> <span class="pl-n">trie</span><span class="pl-p">[</span><span class="pl-n">root</span><span class="pl-p">][</span><span class="pl-n">lt</span><span class="pl-p">];</span>
+    <span class="pl-p">}</span>
+    <span class="pl-k">if</span><span class="pl-p">(</span><span class="pl-n">s</span><span class="pl-p">[</span><span class="pl-n">root</span><span class="pl-p">]</span> <span class="pl-o">==</span> <span class="pl-mi">1</span><span class="pl-p">)</span> <span class="pl-p">{</span>
+        <span class="pl-n">s</span><span class="pl-p">[</span><span class="pl-n">root</span><span class="pl-p">]</span> <span class="pl-o">=</span> <span class="pl-mi">2</span><span class="pl-p">;</span>
+        <span class="pl-k">return</span> <span class="pl-mi">1</span><span class="pl-p">;</span>
+    <span class="pl-p">}</span>
+    <span class="pl-k">else</span> <span class="pl-k">return</span> <span class="pl-mi">2</span><span class="pl-p">;</span>
+<span class="pl-p">}</span>
 
-int main() {
-    scanf(&quot;%d&quot;,&amp;n);
-    for(int i = 1;i &lt;= n; i++) {
-        scanf(&quot;%s&quot;,a);
-        insert();
-    }
-    scanf(&quot;%d&quot;,&amp;m);
-    for(int i = 1;i &lt;= m; i++) {
-        scanf(&quot;%s&quot;,a);
-        p = search();
-        if( !p) puts(&quot;WRONG&quot;);
-        if(p == 1) puts(&quot;OK&quot;);
-        if(p == 2) puts(&quot;REPEAT&quot;);
-    }
-    return 0;
-}
+<span class="pl-kt">int</span> <span class="pl-nf">main</span><span class="pl-p">()</span> <span class="pl-p">{</span>
+    <span class="pl-n">scanf</span><span class="pl-p">(</span><span class="pl-s">&quot;%d&quot;</span><span class="pl-p">,</span><span class="pl-o">&amp;</span><span class="pl-n">n</span><span class="pl-p">);</span>
+    <span class="pl-k">for</span><span class="pl-p">(</span><span class="pl-kt">int</span> <span class="pl-n">i</span> <span class="pl-o">=</span> <span class="pl-mi">1</span><span class="pl-p">;</span><span class="pl-n">i</span> <span class="pl-o">&lt;=</span> <span class="pl-n">n</span><span class="pl-p">;</span> <span class="pl-n">i</span><span class="pl-o">++</span><span class="pl-p">)</span> <span class="pl-p">{</span>
+        <span class="pl-n">scanf</span><span class="pl-p">(</span><span class="pl-s">&quot;%s&quot;</span><span class="pl-p">,</span><span class="pl-n">a</span><span class="pl-p">);</span>
+        <span class="pl-n">insert</span><span class="pl-p">();</span>
+    <span class="pl-p">}</span>
+    <span class="pl-n">scanf</span><span class="pl-p">(</span><span class="pl-s">&quot;%d&quot;</span><span class="pl-p">,</span><span class="pl-o">&amp;</span><span class="pl-n">m</span><span class="pl-p">);</span>
+    <span class="pl-k">for</span><span class="pl-p">(</span><span class="pl-kt">int</span> <span class="pl-n">i</span> <span class="pl-o">=</span> <span class="pl-mi">1</span><span class="pl-p">;</span><span class="pl-n">i</span> <span class="pl-o">&lt;=</span> <span class="pl-n">m</span><span class="pl-p">;</span> <span class="pl-n">i</span><span class="pl-o">++</span><span class="pl-p">)</span> <span class="pl-p">{</span>
+        <span class="pl-n">scanf</span><span class="pl-p">(</span><span class="pl-s">&quot;%s&quot;</span><span class="pl-p">,</span><span class="pl-n">a</span><span class="pl-p">);</span>
+        <span class="pl-n">p</span> <span class="pl-o">=</span> <span class="pl-n">search</span><span class="pl-p">();</span>
+        <span class="pl-k">if</span><span class="pl-p">(</span> <span class="pl-o">!</span><span class="pl-n">p</span><span class="pl-p">)</span> <span class="pl-n">puts</span><span class="pl-p">(</span><span class="pl-s">&quot;WRONG&quot;</span><span class="pl-p">);</span>
+        <span class="pl-k">if</span><span class="pl-p">(</span><span class="pl-n">p</span> <span class="pl-o">==</span> <span class="pl-mi">1</span><span class="pl-p">)</span> <span class="pl-n">puts</span><span class="pl-p">(</span><span class="pl-s">&quot;OK&quot;</span><span class="pl-p">);</span>
+        <span class="pl-k">if</span><span class="pl-p">(</span><span class="pl-n">p</span> <span class="pl-o">==</span> <span class="pl-mi">2</span><span class="pl-p">)</span> <span class="pl-n">puts</span><span class="pl-p">(</span><span class="pl-s">&quot;REPEAT&quot;</span><span class="pl-p">);</span>
+    <span class="pl-p">}</span>
+    <span class="pl-k">return</span> <span class="pl-mi">0</span><span class="pl-p">;</span>
+<span class="pl-p">}</span>
+</pre></div>
 </code></pre>
 
       
@@ -554,8 +496,8 @@ int main() {
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/art/线段覆盖/" rel="prev" title="Luogu P1803 线段覆盖">
-                Luogu P1803 线段覆盖 <i class="fa fa-chevron-right"></i>
+              <a href="/art/最小生成树/" rel="prev" title="最小生成树">
+                最小生成树 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -637,7 +579,7 @@ int main() {
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -659,7 +601,7 @@ int main() {
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">18</span>
+                  <span class="site-state-item-count">16</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
