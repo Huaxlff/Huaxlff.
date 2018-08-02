@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Model,队列,数据结构,栈," />
+  <meta name="keywords" content="数据结构,Model,队列,栈," />
 
 
 
@@ -80,14 +80,14 @@
 
 
 <meta name="description" content="关于栈与队列定义 栈： 栈（stack）作为一种数据结构，是一种只能在一端进行插入和删除操作的特殊线性表。它的特点是后进先出。 队列： 与栈一样，队列（queue）也是一种线性表，它的特点是先进先出，插入与删除分别在头尾两端。   队头与队尾：允许元素插入的一端称为队尾，允许元素删除的一端称为队头。入队：队列的插入操作。出队：队列的删除操作。">
-<meta name="keywords" content="Model,队列,数据结构,栈">
+<meta name="keywords" content="数据结构,Model,队列,栈">
 <meta property="og:type" content="article">
 <meta property="og:title" content="栈与队列">
 <meta property="og:url" content="http://yoursite.com/art/栈与队列/index.html">
 <meta property="og:site_name" content="Huaxlff&#39;s Blog">
 <meta property="og:description" content="关于栈与队列定义 栈： 栈（stack）作为一种数据结构，是一种只能在一端进行插入和删除操作的特殊线性表。它的特点是后进先出。 队列： 与栈一样，队列（queue）也是一种线性表，它的特点是先进先出，插入与删除分别在头尾两端。   队头与队尾：允许元素插入的一端称为队尾，允许元素删除的一端称为队头。入队：队列的插入操作。出队：队列的删除操作。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-02T13:35:53.012Z">
+<meta property="og:updated_time" content="2018-08-02T13:45:08.487Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="栈与队列">
 <meta name="twitter:description" content="关于栈与队列定义 栈： 栈（stack）作为一种数据结构，是一种只能在一端进行插入和删除操作的特殊线性表。它的特点是后进先出。 队列： 与栈一样，队列（queue）也是一种线性表，它的特点是先进先出，插入与删除分别在头尾两端。   队头与队尾：允许元素插入的一端称为队尾，允许元素删除的一端称为队头。入队：队列的插入操作。出队：队列的删除操作。">
@@ -209,6 +209,16 @@
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-frlink">
+          <a href="/frlink/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-link"></i> <br />
+            
+            frlink
           </a>
         </li>
       
@@ -336,6 +346,11 @@
           
 
           
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
 
           
 
@@ -358,11 +373,9 @@
 <p>队头与队尾：允许元素插入的一端称为队尾，允许元素删除的一端称为队头。<br>入队：队列的插入操作。<br>出队：队列的删除操作。</p>
 <a id="more"></a>
 <h3 id="主要应用："><a href="#主要应用：" class="headerlink" title="主要应用："></a>主要应用：</h3><p>使用标准库的栈和队列时，先包含相关的头文件。<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stack&gt;</span></span></span><br><span class="line"><span class="built_in">stack</span> &lt;<span class="keyword">int</span>&gt; stk;</span><br></pre></td></tr></table></figure></p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;queue&gt;</span></span></span><br><span class="line"><span class="built_in">queue</span>&lt;<span class="keyword">int</span>&gt; q;</span><br></pre></td></tr></table></figure>
-<h4 id="栈和队列的基本操作"><a href="#栈和队列的基本操作" class="headerlink" title="栈和队列的基本操作"></a>栈和队列的基本操作</h4><p><strong> 栈 </strong>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">s.empty()               如果栈为空返回<span class="literal">true</span>，否则返回<span class="literal">false</span></span><br><span class="line">s.size()                返回栈中元素的个数</span><br><span class="line">s.pop()                 删除栈顶元素但不返回其值</span><br><span class="line">s.top()                 返回栈顶的元素，但不删除该元素</span><br><span class="line">s.push()                在栈顶压入新元素</span><br></pre></td></tr></table></figure></p>
-<p><strong> 队列 </strong>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">q.empty()               如果队列为空返回<span class="literal">true</span>，否则返回<span class="literal">false</span></span><br><span class="line">q.size()                返回队列中元素的个数</span><br><span class="line">q.pop()                 删除队列首元素但不返回其值</span><br><span class="line">q.front()               返回队首元素的值，但不删除该元素</span><br><span class="line">q.push()                在队尾压入新元素</span><br><span class="line">q.back()                返回队列尾元素的值，但不删除该元素</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;queue&gt;</span></span></span><br><span class="line"><span class="built_in">queue</span> &lt;<span class="keyword">int</span>&gt; q;</span><br></pre></td></tr></table></figure>
+<h4 id="栈和队列的基本操作"><a href="#栈和队列的基本操作" class="headerlink" title="栈和队列的基本操作"></a>栈和队列的基本操作</h4><p><strong> 栈 </strong><br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">s.empty()               如果栈为空返回<span class="literal">true</span>，否则返回<span class="literal">false</span></span><br><span class="line">s.size()                返回栈中元素的个数</span><br><span class="line">s.pop()                 删除栈顶元素但不返回其值</span><br><span class="line">s.top()                 返回栈顶的元素，但不删除该元素</span><br><span class="line">s.push()                在栈顶压入新元素</span><br></pre></td></tr></table></figure></p>
+<p><strong> 队列 </strong><br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">q.empty()               如果队列为空返回<span class="literal">true</span>，否则返回<span class="literal">false</span></span><br><span class="line">q.size()                返回队列中元素的个数</span><br><span class="line">q.pop()                 删除队列首元素但不返回其值</span><br><span class="line">q.front()               返回队首元素的值，但不删除该元素</span><br><span class="line">q.push()                在队尾压入新元素</span><br><span class="line">q.back()                返回队列尾元素的值，但不删除该元素</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -380,11 +393,11 @@
       
         <div class="post-tags">
           
+            <a href="/tags/数据结构/" rel="tag"># 数据结构</a>
+          
             <a href="/tags/Model/" rel="tag"># Model</a>
           
             <a href="/tags/队列/" rel="tag"># 队列</a>
-          
-            <a href="/tags/数据结构/" rel="tag"># 数据结构</a>
           
             <a href="/tags/栈/" rel="tag"># 栈</a>
           
@@ -619,6 +632,26 @@
 
 
         
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
 
 
 
